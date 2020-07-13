@@ -20,31 +20,44 @@
         window.location.search = search;
       }
     </script>
-  </head>
+  </head>T
   <body>
+    <!-- Main section -->`
     <div id="main">
+      <!-- title -->
       <h1>chatterbox</h1>
+      <!-- spinner for loading -->
       <div class="spinner"><img src="client/images/spiffygif_46x46.gif"></div>
+      <!-- chat rooms -->
       <div id="rooms">
         Room:
         <select></select>
         <button>Add Room</button>
       </div>
+      <!-- form with action set to current page using # and method set to POST -->
       <form action="#" id="send" method="post">
         <input type="text" name="message" id="message"/>
         <input type="submit" name="submit" class="submit"/>
       </form>
     </div>
+    <!-- mesasage stream -->
     <div id="chats"></div>
+    <!-- scripts -->
+    <!-- env config -->
     <script src="client/env/config.js"></script>
+    <!-- server to interact with (backend) -->
     <script src="client/scripts/parse.js"></script>
+    <!-- chat rooms -->
     <script src="client/scripts/rooms.js"></script>
+    <!-- code for friends list -->
     <script src="client/scripts/friends.js"></script>
+    <!--  -->
     <script src="client/scripts/messages.js"></script>
     <script src="client/scripts/formView.js"></script>
     <script src="client/scripts/roomsView.js"></script>
     <script src="client/scripts/messageView.js"></script>
     <script src="client/scripts/messagesView.js"></script>
+    <!-- entry point -->
     <script src="client/scripts/app.js"></script>
     <script>
       $(() => App.initialize());
