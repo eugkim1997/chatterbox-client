@@ -20,9 +20,9 @@
         window.location.search = search;
       }
     </script>
-  </head>T
+  </head>
   <body>
-    <!-- Main section -->`
+    <!-- Main section -->
     <div id="main">
       <!-- title -->
       <h1>chatterbox</h1>
@@ -32,10 +32,10 @@
       <div id="rooms">
         Room:
         <select></select>
-        <button>Add Room</button>
+        <button type="roomBtn" class="roomBtn" name="roomBtn" id="roomBtn">Add Room</button>
       </div>
       <!-- form with action set to current page using # and method set to POST -->
-      <form action="#" id="send" method="post">
+      <form action="http://parse.sfo.hackreactor.com/chatterbox/classes/messages" id="send" method="post">
         <input type="text" name="message" id="message"/>
         <input type="submit" name="submit" class="submit"/>
       </form>
