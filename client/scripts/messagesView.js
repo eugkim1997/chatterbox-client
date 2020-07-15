@@ -14,6 +14,7 @@ var MessagesView = {
       //console.log(messages[0])
       // //console.log(MessageView.render(messages[0]));
       //console.log(this.$chats.children())
+    $('#chats').html('');
     if (Array.isArray(messages)) {
       for (var i = 0; i < messages.length; i++) {
         // handle objects with no username

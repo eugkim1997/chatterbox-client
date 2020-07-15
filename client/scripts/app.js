@@ -13,7 +13,8 @@ var App = {
 
     // Fetch initial batch of messages
     App.startSpinner();
-    App.fetch(App.stopSpinner);
+    setInterval(App.fetch, 2000, App.stopSpinner)
+    // App.fetch(App.stopSpinner);
 
   },
 
