@@ -12,8 +12,10 @@ var RoomsView = {
   },
 
   renderRoom: function(room) {
+    $('#rooms select').html('');
     console.log("ran!")
-    $('#rooms select').append(`<option value = '${room}'>${room}</option>`);
+    $('#rooms select').append($(`<option value="${room}">${room}</option>`));
+    console.log(room);
   }
 
 };
